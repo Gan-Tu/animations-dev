@@ -12,6 +12,9 @@ export default function StackedComponent() {
       <li className="underline">
         <Link href="/css-transitions/download-arrow">Download Arrow</Link>
       </li>
+      <li className="underline">
+        <Link href="/css-transitions/toast">Toast</Link>
+      </li>
     </ul>
   )
 }
