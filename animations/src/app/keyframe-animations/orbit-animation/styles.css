@@ -28,15 +28,7 @@
   perspective: 500px;
 }
 
-/* @keyframes orbit {
-  from {
-    transform: translate(-50%, -50%) rotateY(0deg) translateZ(72px) rotateY(360deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotateY(360deg) translateZ(72px) rotateY(0deg);
-  }
-} */
-
+/* translateZ helps with the radius */
 @keyframes orbit {
   from {
     transform: translate(-50%, -50%) rotateY(0deg) translateZ(72px) rotateY(360deg);
