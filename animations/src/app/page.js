@@ -9,6 +9,9 @@ export default function StackedComponent() {
       <li className="underline">
         <Link href="/css-transitions">CSS Transitions</Link>
       </li>
+      <li className="underline">
+        <Link href="/keyframe-animations">Keyframe Animations</Link>
+      </li>
     </ul>
   )
 }

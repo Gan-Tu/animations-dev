@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function StackedComponent() {
+export default function CssTransitions() {
   return (
     <ul className="text-center">
       <li className="underline">
