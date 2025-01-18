@@ -14,4 +14,8 @@ export default {
     },
   },
   plugins: [],
+  // Hovering is technically only possible when using a pointer device. However, when you tap an interactive element on a touch device, it triggers the hover state as well. This is annoying and usually accidental. To avoid this we can apply a media query that will only trigger a hover effect only if a pointer is used to interact with the element.
+  // future: {
+  //   hoverOnlyWhenSupported: true,
+  // },
 };
