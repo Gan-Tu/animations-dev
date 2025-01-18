@@ -1,0 +1,59 @@
+.card {
+  width: 340px;
+  height: 340px;
+  border-radius: 16px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  box-shadow:
+    0px 0px 0px 1px rgba(9, 9, 11, 0.08),
+    0px 1px 2px -1px rgba(9, 9, 11, 0.08),
+    0px 2px 4px 0px rgba(9, 9, 11, 0.04);
+  /* Code below */
+  overflow: hidden;
+}
+
+.card-description {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  position: relative;
+  background: #fafafa;
+  width: 100%;
+  padding: 10px 14px 13px;
+  font-size: 13px;
+  box-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    0px 1px 2px -1px rgba(0, 0, 0, 0.08),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+  /* Code below */
+  --margin: 6px;
+  margin: var(--margin);
+  transform: translateY(calc(100% + var(--margin) + 1px));
+  transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Code below */
+/* .focus-visible is to support keyboard focus */
+.card:hover .card-description,
+.card:focus-visible .card-description {
+  transform: translateY(0);
+}
+
+.card-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.card-title {
+  color: #1b1b1d;
+  font-weight: 500;
+}
+
+.card-subtitle {
+  color: #717175;
+  line-height: 1;
+  margin-top: 4px;
+}

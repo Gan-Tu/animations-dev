@@ -1,0 +1,11 @@
+.box-inner {
+  height: 56px;
+  width: 56px;
+  background: #fad655;
+  border-radius: 50%; 
+  transition: transform 200ms ease;
+}
+
+.box:hover .box-inner {
+  transform: translateY(-20%);
+}

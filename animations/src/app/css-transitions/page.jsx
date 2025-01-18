@@ -4,10 +4,10 @@ export default function StackedComponent() {
   return (
     <ul className="text-center">
       <li className="underline">
-        <Link href="/stacked-cards">Stacked Cards</Link>
+        <Link href="/css-transitions/simple-transform">Simple Transform</Link>
       </li>
       <li className="underline">
-        <Link href="/css-transitions">CSS Transitions</Link>
+        <Link href="/css-transitions/card-hover">Card Hover</Link>
       </li>
     </ul>
   )
