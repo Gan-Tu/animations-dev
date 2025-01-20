@@ -2,21 +2,19 @@ import "./styles.css";
 
 export default function Orbit() {
   return (
-    <div className="container-flex">
-      <div className="coin-container">
-        <div className="coin-wrapper">
-          <div className="coin-side"></div>
+    <div className="coin-container">
+      <div className="coin-wrapper">
+        <div className="coin-side"></div>
+      </div>
+      <div className="coin-wrapper">
+        <div className="coin outer front">
+          <CoinIcon />
         </div>
-        <div className="coin-wrapper">
-          <div className="coin outer front">
-            <CoinIcon />
-          </div>
-          <div className="coin inner front"></div>
-          <div className="coin outer back">
-            <CoinIcon />
-          </div>
-          <div className="coin inner back"></div>
+        <div className="coin inner front"></div>
+        <div className="coin outer back">
+          <CoinIcon />
         </div>
+        <div className="coin inner back"></div>
       </div>
     </div>
   );
@@ -24,11 +22,7 @@ export default function Orbit() {
 
 function CoinIcon() {
   return (
-    <svg
-      viewBox="0 0 718 718"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 718 718" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M170 119H548V599H170V119Z" fill="#F8A400" />
       <path
         fillRule="evenodd"
