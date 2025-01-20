@@ -9,6 +9,9 @@ export default function KeyframeAnimations() {
       <li className="underline">
         <Link href="/keyframe-animations/orbit-animation">Orbit Animation</Link>
       </li>
+      <li className="underline">
+        <Link href="/keyframe-animations/rotating-coin">Rotating Coin</Link>
+      </li>
     </ul>
   )
 }

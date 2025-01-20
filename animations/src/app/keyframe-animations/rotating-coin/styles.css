@@ -1,0 +1,73 @@
+/* Container for centering the coin with flex */
+.container-flex {
+  padding: 1.5rem;
+  display: flex;
+  height: 164px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper that handles the 3D rotation animation */
+.coin-wrapper {
+  height: 56px;
+  width: 56px;
+  position: absolute;
+  transform-style: preserve-3d; /* Enables 3D space for children */
+  animation: rotate 2s linear infinite;
+}
+
+/* Container that provides spacing and positioning context */
+.coin-container {
+  height: 72px;
+  width: 72px;
+  position: relative;
+}
+
+/* Base styles for all coin faces */
+.coin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back of rotated elements */
+  border-radius: 50%;
+  background: #ffcd6c; /* Light gold color for coin */
+}
+
+/* Front outer face - pushed forward in 3D space */
+.front.outer {
+  transform: translateZ(3px); /* Moves 3px forward on Z axis */
+}
+
+/* Front inner face - flipped and pushed back */
+.front.inner {
+  background: #ffaa04; /* Darker gold for depth */
+  transform: rotateY(180deg) translateZ(-3px); /* Flipped and moved back */
+}
+
+/* Back outer face - flipped and pushed forward */
+.back.outer {
+  transform: rotateY(180deg) translateZ(3px); /* Flipped and moved forward */
+}
+
+/* Back inner face - pushed back in 3D space */
+.back.inner {
+  background: #ffaa04; /* Darker gold for depth */
+  transform: translateZ(-3px); /* Moved back on Z axis */
+}
+
+/* Edge/side of the coin to create thickness illusion */
+.coin-side {
+  position: absolute;
+  border-radius: 0;
+  transform: translateX(26px) rotateY(90deg); /* Positioned and rotated to be perpendicular */
+  width: 6px; /* Thickness of the coin */
+  height: 56px;
+  background: #ffaa04; /* Darker gold for side */
+}
+
+/* Rotation animation */
+@keyframes rotate {
+  to {
+      transform: rotateY(360deg); /* Full rotation around Y axis */
+  }
+}
