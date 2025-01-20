@@ -27,31 +27,46 @@
   background: #ffcd6c;
 }
 
+/* Alternative */
+/* .front,
+.outer {
+  transform: translateZ(3px);
+  &.inner {
+    background: #ffaa04;
+    transform: rotateY(180deg) translateZ(-3px);
+  }
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(3px);
+  &.inner {
+    background: #ffaa04;
+    transform: translateZ(-3px);
+  }
+} */
+
+/* Inner face - Darker gold for depth */
+.inner {
+  background: #ffaa04;
+}
+
 /* Front outer face - pushed forward in 3D space */
 .front.outer {
-  /* Moves 3px forward on Z axis */
   transform: translateZ(3px);
 }
 
 /* Front inner face - flipped and pushed back */
 .front.inner {
-  /* Darker gold for depth */
-  background: #ffaa04;
-  /* Flipped and moved back */
   transform: rotateY(180deg) translateZ(-3px);
 }
 
 /* Back outer face - flipped and pushed forward */
 .back.outer {
-  /* Flipped and moved forward */
   transform: rotateY(180deg) translateZ(3px);
 }
 
 /* Back inner face - pushed back in 3D space */
 .back.inner {
-  /* Darker gold for depth */
-  background: #ffaa04;
-  /* Moved back on Z axis */
   transform: translateZ(-3px);
 }
 
